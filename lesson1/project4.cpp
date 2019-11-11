@@ -1,18 +1,19 @@
 #include <iostream>
 using namespace std;
 
-void razlo(int n) {
-	cout << n << " = 1";;
+void razlo (int n) {
+	cout << n << " = 1";
 	int d = 2;
-	while (n) {
+	while (n != 1) {
 		if (n % d == 0) {
 			cout << " * " << d;
-				n /= d;
+				n = n / d;
 		}
 		else {
 			++d;
 		}
 	}
+	cout << endl;
 }
 
 int main() {
